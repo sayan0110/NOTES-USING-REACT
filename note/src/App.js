@@ -7,6 +7,7 @@ import Sidebar from './Components/Sidebar/Sidebar';
 import './App.css';
 
 function App() {
+  
   const [notes, setNotes] = useState(
     JSON.parse(localStorage.getItem("notes-app")) || []
   );
@@ -22,6 +23,7 @@ function App() {
     });
     setNotes(tempNotes);
   };
+
   const deleteNote = (id) => {
     const tempNotes = [...notes];
 
@@ -31,6 +33,7 @@ function App() {
     tempNotes.splice(index, 1);
     setNotes(tempNotes);
   };
+
   const updateText = (text, id) => {
     const tempNotes = [...notes];
 
@@ -40,6 +43,7 @@ function App() {
     tempNotes[index].text = text;
     setNotes(tempNotes);
   };
+
   useEffect(() => {
     localStorage.setItem("notes-app", JSON.stringify(notes));
   }, [notes]);

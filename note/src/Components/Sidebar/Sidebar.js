@@ -17,7 +17,7 @@ function Sidebar(props) {
         {colors.map((item, index) => (
           <li
              key={index} 
-             className="sidebar_list_Item" 
+             className="sidebar_list_item" 
              style={{ backgroundColor: item }} 
              onClick={() => props.addNote(item)}
              />

@@ -17,7 +17,7 @@
     align-items: center;
     height: 0;
     transition: 300ms;
-
+    overflow: hidden;
 }
 
 .sidebar_list_active {

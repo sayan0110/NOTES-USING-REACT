@@ -26,11 +26,11 @@ function NoteContainer(props) {
               key={item.id}
               note={item}
               deleteNote={props.deleteNote}
-              uppdateText={props.uppdateText}
+              updateText={props.updateText}
               />
             ))
           ) : (
-            <h3>No Notes Presence Here</h3>
+            <h3 className="no-notes">No Notes Presence Here</h3>
           )}
         </div>
     </div>
