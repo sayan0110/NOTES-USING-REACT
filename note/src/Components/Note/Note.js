@@ -2,7 +2,7 @@ import React from "react";
 
 import deleteIcon from "../../Assete/delete.png.png";
 
-import "./Note.css";
+import './Note.css';
 
 let timer = 500,
   timeout;

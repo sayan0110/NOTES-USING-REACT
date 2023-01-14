@@ -45,7 +45,7 @@ function App() {
   }, [notes]);
 
   return (
-    <div classname="App">
+    <div className="App">
       <Sidebar addNote={addNote} />
       <NoteContainer 
       notes={notes}
